@@ -6,10 +6,10 @@ This project builds an intruder detection system using machine learning with AWS
 ## Tech Stack
 - **Laptop Webcam**: Captures video frames
 - **Amazon Kinesis Video Stream**: Streams video for processing
-- **Amazon EC2 & Amazon S3**: Stores backup data
+- **Amazon EC2 & Amazon S3**: Stores data/backup data
 - **Amazon Rekognition**: Detects people in the video
 - **Amazon DynamoDB**: Stores detected persons' information
-- **Amazon SNS**: Sends alerts upon intruder detection
+- **Amazon SNS**: Sends alerts upon intruder detection through email
 
 ## Prerequisites
 Ensure you have the following installed:
