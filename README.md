@@ -18,23 +18,35 @@ Ensure you have the following installed:
 - **Python 3**
 
 ## Setup
-### Install Required Dependencies
+### For Ubuntu
 ```sh
-sudo apt update
-git clone https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp.git
-mkdir -p amazon-kinesis-video-streams-producer-sdk-cpp/build
-cd amazon-kinesis-video-streams-producer-sdk-cpp/build
-sudo apt-get install libssl-dev libcurl4-openssl-dev liblog4cplus-dev libgstreamer1.0-dev \
-  libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad \
-  gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
-sudo apt install cmake
-gsudo apt-get install g++ build-essential
-cmake .. -DBUILD_DEPENDENCIES=OFF -DBUILD_GSTREAMER_PLUGIN=ON
-make
-sudo make install
-cd ..
-export GST_PLUGIN_PATH=`pwd`/build
-export LD_LIBRARY_PATH=`pwd`/open-source/local/lib
+      sudo apt update
+
+      git clone https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp.git
+
+      mkdir -p amazon-kinesis-video-streams-producer-sdk-cpp/build
+
+      cd amazon-kinesis-video-streams-producer-sdk-cpp/build
+
+      sudo apt-get install libssl-dev libcurl4-openssl-dev liblog4cplus-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
+
+      sudo apt  install cmake
+
+      sudo apt-get install g++
+
+      sudo apt-get install build-essential
+  
+      cmake .. -DBUILD_DEPENDENCIES=OFF -DBUILD_GSTREAMER_PLUGIN=ON
+
+      make
+
+      sudo make install
+
+      cd ..
+
+      export GST_PLUGIN_PATH=`pwd`/build
+
+      export LD_LIBRARY_PATH=`pwd`/open-source/local/lib
 ```
 
 ### Setting Up AWS Resources
