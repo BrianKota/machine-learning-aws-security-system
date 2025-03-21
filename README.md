@@ -1,9 +1,8 @@
 # AWS Machine Learning Security System
 
 ## pipeline
-<p align="center">
-    <img src="https://github.com/BrianKota/machine-learning-aws-security-system/intrusion-detection/intruder_detection.png" alt="Project pipeline">
-</p>
+![Intruder Detection Pipeline](intrusion-detection/intruder_detection.png)
+
 
 ## Overview
 This project builds an intruder detection system using machine learning with AWS services. It captures video from a laptop webcam, processes frames in real time, and detects intruders using Amazon Rekognition. The system then stores data in Amazon S3 and DynamoDB and sends alerts via Amazon SNS.
