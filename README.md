@@ -17,7 +17,7 @@ Ensure you have the following installed:
 - **AWS CLI configured**
 - **Python 3**
 
-## Setup
+## Setup producer
 ### For Ubuntu
 ```sh
       sudo apt update
